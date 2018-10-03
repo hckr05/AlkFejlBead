@@ -9,5 +9,7 @@ Olyan alkalmazás létrehozása, amelynek keretében egy telekommunikációs szo
 ##### Funkcionális követelmény: 
 
 - Felhasználó legyen képes regisztrálni magát
+  - asda
 - Felhasználó tudjon bejelentkezni, amennyiben hozott már létre fiókot
 - Dolgozó tudjon bejelentkezni az előre megkapott felhasználónévvel és jelszóval
+- Létrehozott számlából történő nyomtatható formátum(pdf) létrehozása
