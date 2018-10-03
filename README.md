@@ -4,7 +4,7 @@
 
 ###### SzImkom Zrt.
 
-Olyan alkalmazás létrehozása, amelynek keretében egy telekommunikációs szolgáltató webfelületét hozzuk létre a hozzá tartozó backenddel. Megkülönböztetjük benne a dolgozói illetve a felhasználói profilokat. Felhasználói profilokat regisztrálni lehet, míg dolgozóit csak admin adhat hozzá. Dolgozói rangok megkülönböztetése.
+Olyan alkalmazás létrehozása, amelynek keretében egy telekommunikációs szolgáltató webfelületét hozzuk létre a hozzá tartozó backenddel. Megkülönböztetjük benne a dolgozói illetve a felhasználói profilokat. Felhasználói profilokat regisztrálni lehet, míg dolgozóit csak admin adhat hozzá.
 
 #### Funkcionális követelmény: 
 
@@ -27,6 +27,7 @@ Olyan alkalmazás létrehozása, amelynek keretében egy telekommunikációs szo
 - Felhasználóról tudjuk, hogy melyik országban tartózkodik és ez alapján módosítjuk a hívás díját
 - Új szerződés megkötésekor telefonszám generálása
 - Havi felhasználói elégedettségmérés
+- Dolgozói rangok megkülönböztetése.
 
 ##### Felhasználó tudjon:
 
