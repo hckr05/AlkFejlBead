@@ -1,3 +1,3 @@
 # AlkFejlBead
-##Beadandó az Alkalmazások Fejlesztése című gyakorlatra. 
-####Projektötlet
+#Beadandó az Alkalmazások Fejlesztése című gyakorlatra. 
+#Projektötlet
