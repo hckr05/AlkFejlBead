@@ -64,7 +64,7 @@ Olyan alkalmazás létrehozása, amelynek keretében egy telekommunikációs szo
 - Dolgozó: Jogosultságai bővebbek mint a felhasználónak. Szintenként változik, hogy mihez fér hozzá a rendszerben illetve, hogy mit tud módosítani
 - Admin: Jogosultságai maximálisak, mindent módosíthat illetve mindenhez hozzáférhet. Jogosultságokat adhat dolgozóknak, illetve létrehozhat egy-egy dolgozó számára új felhasználót. 
 
-#### Adatbázis: 
+#### Adatbázis: adatbázis-séma
 
 - Felhasznalo: felhasznalo_id, keresztnev, vezeteknev, szuletesi_ido, szuletesi_hely, e_mail, telefonszam, hozzatartozo_dolgozo, szerzodesszam, utolso_szerzodesenek_lejarati_datuma, havi_atlag_koltes, havi_limit
 - Dolgozo: dolgozo_id, jogosultsag, keresztnev, veznev, szuletesi_ido, e_mail, telefonszam, felvetel_datuma, hozza_rendelt_felhasznalok_szama
