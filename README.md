@@ -6,7 +6,7 @@
 
 Olyan alkalmazás létrehozása, amelynek keretében egy telekommunikációs szolgáltató webfelületét hozzuk létre a hozzá tartozó backenddel. Megkülönböztetjük benne a dolgozói illetve a felhasználói profilokat. Felhasználói profilokat regisztrálni lehet, míg dolgozóit csak admin adhat hozzá. Dolgozói rangok megkülönböztetése.
 
-##### Funkcionális követelmény: 
+#### Funkcionális követelmény: 
 
 - Felhasználó legyen képes regisztrálni magát
   - Valid felhasználónév,
@@ -28,7 +28,7 @@ Olyan alkalmazás létrehozása, amelynek keretében egy telekommunikációs szo
 - Új szerződés megkötésekor telefonszám generálása
 - Havi felhasználói elégedettségmérés
 
-#### Felhasználó tudjon:
+##### Felhasználó tudjon:
 
 - Saját adatainak módosítása
 - Számlák ellenőrzése, befizetése, reklamálása
@@ -38,7 +38,7 @@ Olyan alkalmazás létrehozása, amelynek keretében egy telekommunikációs szo
 - Hibabejelentés
 - Keresés a számlák vagy szerződései között
 
-#### Dolgozó tudjon: 
+##### Dolgozó tudjon: 
 
 - Felhasználói és saját adatok módosítása(egy bizonyos szint után)
 - Szerződések leokézása-elfogadása
@@ -51,12 +51,31 @@ Olyan alkalmazás létrehozása, amelynek keretében egy telekommunikációs szo
 - Regisztrált felhasználók megtekintése
 - Tudjon keresni telefonszám, név, id, időintervallum illetve ország szerint
 
+#### Nem funkcionális követelmények:
 
+- Felhasználóbarát, ergonomikus elrendezés és kinézet
+- Gyors működés
+- Biztonságos működés: jelszavak tárolása, funkciókhoz való hozzáférés
 
+#### Szerepkörök:
 
+- Felhasználó: Regisztráció után a főoldal tartalmának böngészése, új szerződés. Jogosultságai erősen korlátozottak. Rangjai lehetnek egy felhasználónak. Silver, Gold, Platinum, Diamond
+- Dolgozó: Jogosultságai bővebbek mint a felhasználónak. Szintenként változik, hogy mihez fér hozzá a rendszerben illetve, hogy mit tud módosítani
+- Admin: Jogosultságai maximálisak, mindent módosíthat illetve mindenhez hozzáférhet. Jogosultságokat adhat dolgozóknak, illetve létrehozhat egy-egy dolgozó számára új felhasználót. 
 
+#### Adatbázis: 
 
+- Felhasznalo: felhasznalo_id, keresztnev, vezeteknev, szuletesi_ido, szuletesi_hely, e_mail, telefonszam, hozzatartozo_dolgozo, szerzodesszam, utolso_szerzodesenek_lejarati_datuma, havi_atlag_koltes, havi_limit
+- Dolgozo: dolgozo_id, jogosultsag, keresztnev, veznev, szuletesi_ido, e_mail, telefonszam, felvetel_datuma, hozza_rendelt_felhasznalok_szama
+- Szerzodes: ID, felhasznalo_id, kotesi_idopont, lejarati_idopont, havidij, telefonszam, elfogado_dolgozo
+- Dijcsomag: nev, id, havidij, max_adatforgalom, kedvezmeny_merteke, meddig_elerhete, lejártakor_mire_valtjuk_at, dijcsomag_kivezetese
+- Hálózati forgalom: forgalom_id, hivo_szam, fogado_szam, idotartam, percdij, emelt_dijas_hivas_volt_e
 
+#### Szakterületi fogalomjegyzék:
+
+- Szerződés: A cég és a felhasználó által kötött megállapodás
+- Díjcsomag: A cég által kínált, felhasználók által elérhető konstrukciók
+- Számla: A felhasználó havi forgalmát telefonszámonként részletező dokumentum. 
 
 
 
