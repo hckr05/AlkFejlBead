@@ -4,7 +4,7 @@
 
 ###### SzImkom Zrt.
 
-Olyan alkalmazás létrehozása, amelynek keretében egy telekommunikációs szolgáltató webfelületét hozzuk létre a hozzá tartozó backenddel. Megkülönböztetjük benne a dolgozói illetve a felhasználói profilokat. Felhasználói profilokat regisztrálni lehet, míg dolgozóit csak admin adhat hozzá.
+Olyan alkalmazás létrehozása, amelynek keretében egy telekommunikációs szolgáltató webfelületét hozzuk létre a hozzá tartozó backenddel. Megkülönböztetjük benne a dolgozói illetve a felhasználói profilokat. Felhasználói profilokat regisztrálni lehet, míg dolgozóit csak admin adhat hozzá.a
 
 #### Funkcionális követelmény: 
 
