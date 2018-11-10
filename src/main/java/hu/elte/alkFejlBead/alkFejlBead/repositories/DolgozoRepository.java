@@ -1,4 +1,7 @@
 package hu.elte.alkFejlBead.alkFejlBead.repositories;
 
-public interface DolgozoRepository {
+import hu.elte.alkFejlBead.alkFejlBead.entities.Dolgozo;
+import org.springframework.data.repository.CrudRepository;
+
+public interface DolgozoRepository extends CrudRepository<Dolgozo, Integer> {
 }

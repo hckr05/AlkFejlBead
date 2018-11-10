@@ -1,4 +1,7 @@
 package hu.elte.alkFejlBead.alkFejlBead.repositories;
 
-public interface SzerzodesRepository {
+import hu.elte.alkFejlBead.alkFejlBead.entities.Szerzodes;
+import org.springframework.data.repository.CrudRepository;
+
+public interface SzerzodesRepository extends CrudRepository<Szerzodes, Integer> {
 }
