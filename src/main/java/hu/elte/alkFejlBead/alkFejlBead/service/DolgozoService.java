@@ -1,6 +1,5 @@
 package hu.elte.alkFejlBead.alkFejlBead.service;
 
-import hu.elte.alkFejlBead.alkFejlBead.Model.Dijcsomag;
 import hu.elte.alkFejlBead.alkFejlBead.Model.Dolgozo;
 import hu.elte.alkFejlBead.alkFejlBead.repositories.DolgozoRepository;
 import org.springframework.beans.factory.annotation.Autowired;

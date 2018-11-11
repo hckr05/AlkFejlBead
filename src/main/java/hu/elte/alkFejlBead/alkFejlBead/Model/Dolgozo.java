@@ -25,6 +25,17 @@ public class Dolgozo {
     @NotEmpty
     private String telefon;
 
+    @NotEmpty
+    private String jelszo;
+
+    @NotEmpty
+    @Enumerated(EnumType.STRING)
+    private Role role;
+
+    public enum Role {
+        ROLE_DOLGOZO, ROLE_ADMIN
+    }
+
     @OneToMany(mappedBy = "dolgozo", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JsonIgnore
     private List<Szerzodes> szerzodes;
@@ -42,6 +53,22 @@ public class Dolgozo {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getJelszo() {
+        return jelszo;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
+    public void setJelszo(String jelszo) {
+        this.jelszo = jelszo;
     }
 
     public String getVezNev() {

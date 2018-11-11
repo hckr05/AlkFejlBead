@@ -29,6 +29,17 @@ public class Ugyfel {
     @OneToOne
     private Szerzodes szerzodes;
 
+    @NotEmpty
+    private String jelszo;
+
+    @NotEmpty
+    @Enumerated(EnumType.STRING)
+    private Dolgozo.Role role;
+
+    public enum Role {
+        ROLE_UGYFEL
+    }
+
     public Ugyfel(String vezNev, String kerNev, String email, Dolgozo dolgozo, Szerzodes szerzodes) {
         this.vezNev = vezNev;
         this.kerNev = kerNev;

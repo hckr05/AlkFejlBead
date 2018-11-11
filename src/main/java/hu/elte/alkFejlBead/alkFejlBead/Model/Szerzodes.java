@@ -5,6 +5,7 @@ import lombok.Data;
 import javax.persistence.*;
 //import java.sql.Date;
 import java.util.Date;
+import java.util.List;
 
 
 @Entity
@@ -26,6 +27,9 @@ public class Szerzodes {
     private Dijcsomag dijcsomag;
 
     private Date lejarat;
+
+    @ManyToMany(mappedBy = "szoveg", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<Poszt> poszt;
 
     public Szerzodes(Ugyfel ugyfel, Dolgozo dolgozo, Dijcsomag dijcsomag, Date lejarat) {
         this.ugyfel = ugyfel;
