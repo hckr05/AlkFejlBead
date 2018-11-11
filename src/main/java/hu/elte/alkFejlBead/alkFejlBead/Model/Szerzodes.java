@@ -8,23 +8,80 @@ import java.util.Date;
 
 
 @Entity
-@Data
-
-
+@Table(name = "szerzodes")
 public class Szerzodes {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Integer id;
+    private Long id;
 
     @OneToOne
-    private Integer ugyfelId;
+    private Ugyfel ugyfel;
+
+    @ManyToOne
+    @JoinColumn
+    private Dolgozo dolgozo;
 
     @OneToOne
-    private Integer dolgozoId;
-
-    @OneToOne
-    private Integer dijcsomagId;
+    private Dijcsomag dijcsomag;
 
     private Date lejarat;
+
+    public Szerzodes(Ugyfel ugyfel, Dolgozo dolgozo, Dijcsomag dijcsomag, Date lejarat) {
+        this.ugyfel = ugyfel;
+        this.dolgozo = dolgozo;
+        this.dijcsomag = dijcsomag;
+        this.lejarat = lejarat;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Ugyfel getUgyfel() {
+        return ugyfel;
+    }
+
+    public void setUgyfel(Ugyfel ugyfel) {
+        this.ugyfel = ugyfel;
+    }
+
+    public Dolgozo getDolgozo() {
+        return dolgozo;
+    }
+
+    public void setDolgozo(Dolgozo dolgozo) {
+       this.dolgozo = dolgozo;
+    }
+
+    public Dijcsomag getDijcsomag() {
+        return dijcsomag;
+    }
+
+    public void setDijcsomag(Dijcsomag dijcsomag) {
+        this.dijcsomag = dijcsomag;
+    }
+
+    public Date getLejarat() {
+        return lejarat;
+    }
+
+    public void setLejarat(Date lejarat) {
+        this.lejarat = lejarat;
+    }
+
+    @Override
+    public String toString() {
+        return "Szerzodes{" +
+                "id=" + id +
+                ", ugyfel=" + ugyfel +
+                ", dolgozo=" + dolgozo +
+                ", dijcsomag=" + dijcsomag +
+                ", lejarat=" + lejarat +
+                '}';
+    }
 }
