@@ -3,7 +3,7 @@ package hu.elte.alkFejlBead.alkFejlBead.Model;
 import lombok.Data;
 
 import javax.persistence.*;
-//import java.sql.Date;
+//import java.data.sql.Date;
 import java.util.Date;
 import java.util.List;
 
@@ -17,26 +17,18 @@ public class Szerzodes {
     private Long id;
 
     @OneToOne
-    private Ugyfel ugyfel;
-
-    @ManyToOne
-    @JoinColumn
-    private Dolgozo dolgozo;
+    private Dijcsomag dijcsomag;
 
     @OneToOne
-    private Dijcsomag dijcsomag;
+    private Felhasznalo dolgozo;
+
+    @OneToOne
+    private Felhasznalo ugyfel;
 
     private Date lejarat;
 
-    @ManyToMany(mappedBy = "szoveg", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToMany(mappedBy = "szerzodes", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Poszt> poszt;
-
-    public Szerzodes(Ugyfel ugyfel, Dolgozo dolgozo, Dijcsomag dijcsomag, Date lejarat) {
-        this.ugyfel = ugyfel;
-        this.dolgozo = dolgozo;
-        this.dijcsomag = dijcsomag;
-        this.lejarat = lejarat;
-    }
 
     public Long getId() {
         return id;
@@ -44,22 +36,6 @@ public class Szerzodes {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public Ugyfel getUgyfel() {
-        return ugyfel;
-    }
-
-    public void setUgyfel(Ugyfel ugyfel) {
-        this.ugyfel = ugyfel;
-    }
-
-    public Dolgozo getDolgozo() {
-        return dolgozo;
-    }
-
-    public void setDolgozo(Dolgozo dolgozo) {
-       this.dolgozo = dolgozo;
     }
 
     public Dijcsomag getDijcsomag() {
@@ -70,6 +46,22 @@ public class Szerzodes {
         this.dijcsomag = dijcsomag;
     }
 
+    public Felhasznalo getDolgozo() {
+        return dolgozo;
+    }
+
+    public void setDolgozo(Felhasznalo dolgozo) {
+        this.dolgozo = dolgozo;
+    }
+
+    public Felhasznalo getUgyfel() {
+        return ugyfel;
+    }
+
+    public void setUgyfel(Felhasznalo ugyfel) {
+        this.ugyfel = ugyfel;
+    }
+
     public Date getLejarat() {
         return lejarat;
     }
@@ -78,14 +70,23 @@ public class Szerzodes {
         this.lejarat = lejarat;
     }
 
+    public List<Poszt> getPoszt() {
+        return poszt;
+    }
+
+    public void setPoszt(List<Poszt> poszt) {
+        this.poszt = poszt;
+    }
+
     @Override
     public String toString() {
         return "Szerzodes{" +
                 "id=" + id +
-                ", ugyfel=" + ugyfel +
-                ", dolgozo=" + dolgozo +
                 ", dijcsomag=" + dijcsomag +
+                ", dolgozo=" + dolgozo +
+                ", ugyfel=" + ugyfel +
                 ", lejarat=" + lejarat +
+                ", poszt=" + poszt +
                 '}';
     }
 }

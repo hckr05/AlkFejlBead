@@ -1,49 +1,29 @@
--- INSERT INTO
---     dolgozo(id, vezNev, kerNev, telefon, jelszo, role, szerzodes)
--- VALUES
---     (1, 'Kis', 'Sandor', '06302583694', 'asdf1234', 'ROLE_DOLGOZO', );
---
--- INSERT INTO
---     dolgozo(id, vezNev, kerNev, telefon, jelszo, role, szerzodes)
--- VALUES
---     (2, 'Nagy', 'Géza', '06304757494', 'asdf1234', 'ROLE_DOLGOZO', );
---
--- INSERT INTO
---     dijcsomag(id, nev, havidij)
--- VALUES
---     (1, 'Praktikum', 2500);
---
--- INSERT INTO
---     dijcsomag(id, nev, havidij)
--- VALUES
---     (2, 'Borsozo+', 5000);
---
--- INSERT INTO
---     poszt(id, nev, szoveg)
--- VALUES
---     (1, 'sarga', '#A sarga az uj nem sarga!');
---
--- INSERT INTO
---     poszt(id, nev, szoveg)
--- VALUES
---     (2, 'kek', '#A kek az uj nem kek!');
---
--- INSERT INTO
---     szerzodes(id, ugyfel, dolgozo, dijcsomag, lejarat)
--- VALUES
---     (1, 1, 1, 1, 2020);
---
--- INSERT INTO
---     szerzodes(id, ugyfel, dolgozo, dijcsomag, lejarat)
--- VALUES
---     (2, 2, 2, 2, 2022);
---
--- INSERT INTO
---    ugyfel(id, vezNev, kerNev, email, dolgozo, szerzodes, jelszo, role)
--- VALUES
---     (1, 'Toth', 'Karcsi', 'tothkarcsi@asdf.com', 1, 1, 'asdf1234', 'ROLE_UGYFEL');
---
--- INSERT INTO
---    ugyfel(id, vezNev, kerNev, email, dolgozo, szerzodes, jelszo, role)
--- VALUES
---     (1, 'Nagy', 'Jakab', 'nagyjakab@asdf.com', 2, 2, 'asdf1234', 'ROLE_UGYFEL');
+insert into felhasznalo (id, nev, jelszo, aktiv, role)
+values (1, 'admin','$2a$10$rhMmykmCzZjRd8cGtPxdGOeOazufkBqe4y5F1M0iR8a4aq2q6Q1py', true, 'ROLE_ADMIN');
+
+insert into felhasznalo (id, nev, jelszo, aktiv, role)
+values (2, 'felhasznalo','$2a$10$v.oZdo14t6mB/Nz.he0iU.zO9UWZ143.Erm9Rr48F6ZxzFbvxZPAq', true, 'ROLE_UGYFEL');
+
+insert into dijcsomag (id, havidij, nev)
+values (1, 10000, 'diak');
+
+insert into dijcsomag (id, havidij, nev)
+values (2, 5000, 'gyerek');
+
+insert into poszt (id, nev)
+values (1, '#olcso');
+
+insert into poszt (id, nev)
+values (2, '#kedvezo');
+
+insert into poszt (id, nev)
+values (3, '#soknet');
+
+insert into szerzodes (id, lejarat, dijcsomag_id, dolgozo_id, ugyfel_id)
+values (1, '2015-12-17', 1, 1, 2);
+
+insert into poszt_szerzodes(poszt_id, szerzodes_id)
+values (1, 1);
+
+insert into poszt_szerzodes(poszt_id, szerzodes_id)
+values (2, 1);

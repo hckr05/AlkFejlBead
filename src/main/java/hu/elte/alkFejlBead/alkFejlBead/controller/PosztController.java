@@ -14,7 +14,6 @@ public class PosztController {
     @Autowired
     private PosztService posztService;
 
-    //
     @GetMapping("/all")
     public Iterable<Poszt> all(){return posztService.getAllPoszt();}
 }

@@ -2,6 +2,7 @@ package hu.elte.alkFejlBead.alkFejlBead.Model;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
+import java.util.List;
 
 @Table(name = "poszt")
 @Entity
@@ -15,5 +16,5 @@ public class Poszt {
 
     @NotEmpty
     @ManyToMany(fetch = FetchType.LAZY)
-    private String szoveg;
+    private List<Szerzodes> szerzodes;
 }
