@@ -80,10 +80,18 @@ Olyan alkalmazás létrehozása, amelynek keretében egy telekommunikációs szo
 
 ### Endpointok:
 
-- 
+# Felhasználó:
+- "/felhasznalo/regisztracio"  <- Posthívás, amely egy új ügyfél regisztrációját segíti. 
+- "/felhasznalo/belepes" <- Posthívás, amely egy már regisztrált ügyfél belépését segíti.
+
+# Díjcsomag:
+- "/dijcsomag/all" <- Az összes adatbázisban lévő díjcsomagot kilistázza. Csak admin/admin-nal érhető el.
 -
+
+# Poszt:
+- "/poszt/all" <- A szerződésékhez csatolható posztok összességét mutatja meg ez a hívás. Csak admin/admin-nal érhető el. 
 -
--
--
+
+# Szerződés: 
 
 
