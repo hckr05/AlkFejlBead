@@ -27,4 +27,19 @@ public class SzerzodesController {
         return service.getSzerzodesById(id);
     }
 
+    @PutMapping("{id}")
+    public void put(@RequestBody Szerzodes szerzodes, @PathVariable long id){
+        service.update(szerzodes, id);
+    }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Long id) {
+        service.delete(id);
+    }
+
+    @PostMapping("")
+    public void  post(@RequestBody Szerzodes szerzodes) {
+        service.create(szerzodes);
+    }
+
 }

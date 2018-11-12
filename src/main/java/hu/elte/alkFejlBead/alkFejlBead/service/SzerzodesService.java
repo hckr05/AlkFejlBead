@@ -18,12 +18,22 @@ public class SzerzodesService implements Serializable {
 
     public Optional<Szerzodes> getSzerzodesById(Long id) { return repository.findById(id); }
 
-    public void update(Szerzodes szerzodes) {
-        
-        repository.save(szerzodes);
+    public void update(Szerzodes szerzodes, Long id) {
+        Optional<Szerzodes> szerzodes1 = repository.findById(id);
+        if (szerzodes1.isPresent()) {
+            repository.save(szerzodes);
+        }
     }
 
-    public void create(Szerzodes szerzodes) { repository.save(szerzodes);}
+    public void create(Szerzodes szerzodes) {
+        if (!repository.findById(szerzodes.getId()).isPresent()) {
+            repository.save(szerzodes);
+        }
+    }
 
-    public void delete(Szerzodes szerzodes) { repository.delete(szerzodes);}
+    public void delete(Long id) {
+        Optional<Szerzodes> szerzodes = repository.findById(id);
+        if (szerzodes.isPresent()) repository.delete(szerzodes.get());
+
+    }
 }
