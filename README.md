@@ -78,6 +78,12 @@ Olyan alkalmazás létrehozása, amelynek keretében egy telekommunikációs szo
 - Díjcsomag: A cég által kínált, felhasználók által elérhető konstrukciók
 - Számla: A felhasználó havi forgalmát telefonszámonként részletező dokumentum. 
 
+### Endpointok:
 
+- 
+-
+-
+-
+-
 
 
