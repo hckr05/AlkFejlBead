@@ -78,20 +78,23 @@ Olyan alkalmazás létrehozása, amelynek keretében egy telekommunikációs szo
 - Díjcsomag: A cég által kínált, felhasználók által elérhető konstrukciók
 - Számla: A felhasználó havi forgalmát telefonszámonként részletező dokumentum. 
 
-### Endpointok:
 
-# Felhasználó:
+
+### Endpointok:
+-Az endpointok teszteléséhez ajánlott a postman nevű program hsználata.
+
+#### Felhasználó:
 - "/felhasznalo/regisztracio"  <- Posthívás, amely egy új ügyfél regisztrációját segíti. 
 - "/felhasznalo/belepes" <- Posthívás, amely egy már regisztrált ügyfél belépését segíti.
 
-# Díjcsomag:
+#### Díjcsomag:
 - "/dijcsomag/all" <- Az összes adatbázisban lévő díjcsomagot kilistázza. Csak admin/admin-nal érhető el.
--
 
-# Poszt:
+#### Poszt:
 - "/poszt/all" <- A szerződésékhez csatolható posztok összességét mutatja meg ez a hívás. Csak admin/admin-nal érhető el. 
--
 
-# Szerződés: 
+#### Szerződés: 
+- "/szerzodes/all" <- Az összes adatbázisban lévő szerződést listázza a hívás. Csak admin/admin-nal érhető el.
+- "/szerzodes/{id}" <- Hívható getMapping, PutMapping és DeleteMapping-ként is. Ettől függ, hogy milyen eredményt várunk a működésekor. 
 
 
