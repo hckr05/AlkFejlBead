@@ -1,0 +1,1392 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="11.80" multi-file="no" uid="simpac433d340fa243a0a5d38f67da694c8a">
+  <meta>
+    <name>AlkFejlBead</name>
+    <authors>Szabolcs Szerencsi</authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="package" type="UmlPackage" />
+        <value>6</value>
+      </counter>
+      <counter>
+        <item-type type-id="class" type="UmlClass" />
+        <value>22</value>
+      </counter>
+      <counter>
+        <item-type type-id="erd-entity" type="ErdEntity" />
+        <value>4</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="" type="AbstractElementGroup" />
+        <value>391</value>
+      </counter>
+      <counter>
+        <item-type type-id="package" type="UmlPackage" />
+        <value>7</value>
+      </counter>
+      <counter>
+        <item-type type-id="class" type="UmlClass" />
+        <value>23</value>
+      </counter>
+      <counter>
+        <item-type type-id="universal-connector" type="UniversalConnector" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="erd-entity" type="ErdEntity" />
+        <value>5</value>
+      </counter>
+      <counter>
+        <item-type type-id="erd-relationship" type="ErdRelation" />
+        <value>6</value>
+      </counter>
+      <counter>
+        <item-type type-id="relationship" type="UmlAssociation" />
+        <value>9</value>
+      </counter>
+      <counter>
+        <item-type type-id="dependency" type="UmlDependency" />
+        <value>4</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>1</value>
+      </counter>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlPackageDiagram</type>
+        <value>1</value>
+      </counter>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.Other.EntityRelationshipDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
+        <value>96</value>
+      </counter>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.AttributeField</type>
+        <value>92</value>
+      </counter>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Erd.ErdEntityAttribute</type>
+        <value>111</value>
+      </counter>
+    </fields>
+  </counters>
+  <alias-groups />
+  <management uid="md-8ede3a3030d440038bfbc72994bddc50" name="" task-id-sequence="0">
+    <persons>
+      <person id="P765aec9f64bb4547acd599950a78d7bb">
+        <first-name>Szabolcs</first-name>
+        <last-name>Szerencsi</last-name>
+        <role />
+        <e-mail>szer_szabi@inf.elte.hu</e-mail>
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-d83f8f0a99ab40df87de321d18e43773" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <type id="Dijcsomag" tid="" name="Dijcsomag" description="" />
+      <type id="DijcsomagService" tid="" name="DijcsomagService" description="" />
+      <type id="BCryptPasswordEncoder" tid="" name="BCryptPasswordEncoder" description="" />
+      <type id="FelhasznaloRepository" tid="" name="FelhasznaloRepository" description="" />
+      <type id="Felhasznalo" tid="" name="Felhasznalo" description="" />
+      <type id="ResponseEntity&lt;Felhasznalo&gt;" tid="" name="ResponseEntity&lt;Felhasznalo&gt;" description="" />
+      <type id="ResponseEntity" tid="" name="ResponseEntity" description="" />
+      <type id="PosztService" tid="" name="PosztService" description="" />
+      <type id="Iterable&lt;Poszt&gt;" tid="" name="Iterable&lt;Poszt&gt;" description="" />
+      <type id="SzerzodesService" tid="" name="SzerzodesService" description="" />
+      <type id="Iterable&lt;Szerzodes&gt;" tid="" name="Iterable&lt;Szerzodes&gt;" description="" />
+      <type id="Long" tid="" name="Long" description="" />
+      <type id="Optional&lt;Szerzodes&gt;" tid="" name="Optional&lt;Szerzodes&gt;" description="" />
+      <type id="Szerzodes" tid="" name="Szerzodes" description="" />
+      <type id="long" tid="" name="long" description="" />
+      <type id="void" tid="" name="void" description="" />
+      <type id="int" tid="" name="int" description="" />
+      <type id="Int" tid="" name="Int" description="" />
+      <type id="boolean" tid="" name="boolean" description="" />
+      <type id="Role" tid="" name="Role" description="" />
+      <type id="List&lt;Szerzodes&gt;" tid="" name="List&lt;Szerzodes&gt;" description="" />
+      <type id="Date" tid="" name="Date" description="" />
+      <type id="List&lt;Poszt&gt;" tid="" name="List&lt;Poszt&gt;" description="" />
+      <type id="DijcsomagRepository" tid="" name="DijcsomagRepository" description="" />
+      <type id="Iterable&lt;Dijcsomag&gt;" tid="" name="Iterable&lt;Dijcsomag&gt;" description="" />
+      <type id="Optional&lt;Dijcsomag&gt;" tid="" name="Optional&lt;Dijcsomag&gt;" description="" />
+      <type id="PosztRepository" tid="" name="PosztRepository" description="" />
+      <type id="Optional&lt;Poszt&gt;" tid="" name="Optional&lt;Poszt&gt;" description="" />
+      <type id="Class:6b419492cc1a431fb8a0d1b171899dd8" tid="" name="Poszt" description="" class-ref="6b419492cc1a431fb8a0d1b171899dd8" />
+      <type id="SzerzodesRepository" tid="" name="SzerzodesRepository" description="" />
+      <type id="AutenticatedFelhasznalo" tid="" name="AutenticatedFelhasznalo" description="" />
+      <type id="UserDetails" tid="" name="UserDetails" description="" />
+      <type id="UserDetailsService" tid="" name="UserDetailsService" description="" />
+      <type id="HttpSecurity" tid="" name="HttpSecurity" description="" />
+      <type id="AuthenticationManagerBuilder" tid="" name="AuthenticationManagerBuilder" description="" />
+      <type id="Optional&lt;Felhasznalo&gt;" tid="" name="Optional&lt;Felhasznalo&gt;" description="" />
+    </custom-types>
+  </types>
+  <items />
+  <models>
+    <model id="pbe424eff56bb4952880c6295be89ee6d_532359021" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author>Szabolcs Szerencsi</author>
+        </authors>
+        <description />
+        <creation-date>11/12/2018 13:20:25</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-class" id="p5b3f3ae5ed004bc4990d35b5b7f63cee_187635211" name="ClassDiagram1" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-52,219" zoom="0.7">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author>Szabolcs Szerencsi</author>
+          </authors>
+          <description />
+          <creation-date>11/12/2018 13:20:25</creation-date>
+          <change-date>11/12/2018 17:08:00</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="ad8314b7d09842efab330e3a3a26e812" cid="REL008" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 17:08:00" from="c4da400e713f497e8c0ff55b55862442" to="7a15feca773c4dc09d1deffc5a9ac5b6">
+            <style class="default" />
+            <relation from="c4da400e713f497e8c0ff55b55862442" to="7a15feca773c4dc09d1deffc5a9ac5b6">
+              <start-role id="umlar-901120f1-3bab-405e-b94d-32a567044994" name="" navigability="" association-type="aggregation" visibility="private" />
+              <end-role id="umlar-9d26ef06-cebd-472e-b69b-5b7a5c656d29" name="" navigability="" association-type="association" visibility="private" />
+            </relation>
+          </item>
+          <item id="47b82524abb64e3dae8de0563fd787f1" cid="REL002" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 17:06:43" from="6b419492cc1a431fb8a0d1b171899dd8" to="c4da400e713f497e8c0ff55b55862442">
+            <style class="default" />
+            <relation from="6b419492cc1a431fb8a0d1b171899dd8" to="c4da400e713f497e8c0ff55b55862442">
+              <start-role id="umlar-19abd572-7a3f-4c0a-a28d-0ebdf232624a" name="" navigability="" association-type="aggregation" visibility="private" />
+              <end-role id="umlar-5720e900-f8d0-4917-82cb-88661c009b3c" name="" navigability="" association-type="association" visibility="private" />
+            </relation>
+          </item>
+          <item id="1d257862ca5f4e9da3ca92d97f05c912" cid="REL007" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 17:07:49" from="c4da400e713f497e8c0ff55b55862442" to="88dfadeb31e041819c123eb58be869af">
+            <style class="default" />
+            <relation from="c4da400e713f497e8c0ff55b55862442" to="88dfadeb31e041819c123eb58be869af">
+              <start-role id="umlar-9aa17de4-edd1-4000-9ba4-31ce018aa0c7" name="" navigability="" association-type="aggregation" visibility="private" />
+              <end-role id="umlar-715e314d-5c90-4a9e-ac6b-db89e9125c34" name="" navigability="" association-type="association" visibility="private" />
+            </relation>
+          </item>
+        </abstract-items>
+        <layer id="3a8c10df02124ea0a62b79daeb12576d" name="Default" visible="true" enabled="true" locked="false">
+          <item id="88dfadeb31e041819c123eb58be869af" iid="336cdddf4109403a85dc1e604eb0005a" anchor="None" creation-date="11/12/2018 16:00:04" order-index="10" type="entity">
+            <layout ax="62" ay="33" awidth="348" aheight="236" x="62" y="33" width="348" height="236" />
+            <class />
+          </item>
+          <item id="7a15feca773c4dc09d1deffc5a9ac5b6" iid="50b516c604c443fb85ce9571a0cde346" anchor="None" creation-date="11/12/2018 16:00:06" order-index="11" type="entity">
+            <layout ax="712" ay="33" awidth="216" aheight="304" x="712" y="33" width="216" height="304" />
+            <class />
+          </item>
+          <item id="6b419492cc1a431fb8a0d1b171899dd8" iid="b2546d4376e34cd6a658d3861835bbda" anchor="None" creation-date="11/12/2018 16:00:08" order-index="12" type="entity">
+            <layout ax="29" ay="441" awidth="334" aheight="202" x="29" y="441" width="334" height="202" />
+            <class />
+          </item>
+          <item id="c4da400e713f497e8c0ff55b55862442" iid="1c430d80697c42fba89c56c51390f166" anchor="None" creation-date="11/12/2018 16:00:10" order-index="13" type="entity">
+            <layout ax="605" ay="457" awidth="298" aheight="389" x="605" y="457" width="298" height="389" />
+            <class />
+          </item>
+          <item id="47b82524abb64e3dae8de0563fd787f1" iid="c389f3ddd3cb4676ad7bc8cc4bbee26c" creation-date="11/12/2018 17:06:43" order-index="14" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="true" auto-path="" x1="363" y1="620" x2="605" y2="610" start-border-pos="0.472153465346535" end-border-pos="0.901670951156812" name-position="0,0">
+              <points>
+                <point x="363" y="620" />
+                <point x="605" y="610" />
+              </points>
+            </layout>
+            <relation from="6b419492cc1a431fb8a0d1b171899dd8" from-iid="b2546d4376e34cd6a658d3861835bbda" from-field="o0cd806bee51a4941a1e54b5b63d0bc7d550" to="c4da400e713f497e8c0ff55b55862442" to-iid="1c430d80697c42fba89c56c51390f166" />
+          </item>
+          <item id="1d257862ca5f4e9da3ca92d97f05c912" iid="ed6f0f7b173e404e8feaf0584c15d1e6" creation-date="11/12/2018 17:07:49" order-index="15" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="605" y1="457" x2="410" y2="269" start-border-pos="0" end-border-pos="0.5" name-position="0,0">
+              <points>
+                <point x="605" y="457" />
+                <point x="410" y="269" />
+              </points>
+            </layout>
+            <relation from="c4da400e713f497e8c0ff55b55862442" from-iid="1c430d80697c42fba89c56c51390f166" to="88dfadeb31e041819c123eb58be869af" to-iid="336cdddf4109403a85dc1e604eb0005a" />
+          </item>
+          <item id="ad8314b7d09842efab330e3a3a26e812" iid="9e185b3c5ab94e8889f637c3de3bddf9" creation-date="11/12/2018 17:08:00" order-index="16" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="754" y1="457" x2="754" y2="337" start-border-pos="0.125" end-border-pos="0.701388888888889" name-position="0,0">
+              <points>
+                <point x="754" y="457" />
+                <point x="754" y="337" />
+              </points>
+            </layout>
+            <relation from="c4da400e713f497e8c0ff55b55862442" from-iid="1c430d80697c42fba89c56c51390f166" to="7a15feca773c4dc09d1deffc5a9ac5b6" to-iid="50b516c604c443fb85ce9571a0cde346" />
+          </item>
+        </layer>
+      </diagram>
+      <diagram type="uml-package" id="p17c283b529b3431198c394e9a0a441c0_240021194" name="PackageDiagram1" order-index="2" overview-order-index="0" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="30,43" zoom="0.5">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author>Szabolcs Szerencsi</author>
+          </authors>
+          <description />
+          <creation-date>11/12/2018 13:20:30</creation-date>
+          <change-date>11/12/2018 16:05:03</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="b65cac26f2da466a8b486fae996919ff" cid="PKG001" type="package" name="hu.elte.alkFejlBead.alFejlBead" style-class="" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 14:23:05">
+            <style class="default" />
+          </item>
+          <item id="6dd4e3e069334c73b790cc3e5515248a" cid="PKG002" type="package" name="controller" style-class="" owner="b65cac26f2da466a8b486fae996919ff" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 15:53:29">
+            <style class="default" />
+          </item>
+          <item id="ab54e058ca634d278359a39d1047db1a" cid="PKG003" type="package" name="Model" style-class="" owner="b65cac26f2da466a8b486fae996919ff" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 15:53:34">
+            <style class="default" />
+          </item>
+          <item id="979b46c3c5014579bed5872c4d2ad00f" cid="PKG004" type="package" name="repositories" style-class="" owner="b65cac26f2da466a8b486fae996919ff" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 15:53:41">
+            <style class="default" />
+          </item>
+          <item id="b35e566b6aca436fb0566b2fb7032ca5" cid="PKG005" type="package" name="security" style-class="" owner="b65cac26f2da466a8b486fae996919ff" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 15:54:15">
+            <style class="default" />
+          </item>
+          <item id="24c2d493bbe54e548fa26475da1ea9d6" cid="PKG006" type="package" name="service" style-class="" owner="b65cac26f2da466a8b486fae996919ff" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 15:54:21">
+            <style class="default" />
+          </item>
+          <item id="5939ba79f23b4532921d74e33280f5f1" cid="C001" type="class" name="DijcsomagController" style-class="" owner="6dd4e3e069334c73b790cc3e5515248a" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 15:58:19">
+            <style class="default" />
+            <attributes>
+              <attribute id="a92d51cf1d76942deb04aa1842b550282556" cid="ELEM002" name="dijcsomagService" creation-date="01/01/0001 00:00:00" type="DijcsomagService" type-id="DijcsomagService" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-ebe007b6-11d7-43c3-b6c3-d405622e92ed" />
+                </source-codes>
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o4d8f0a31da094c6986bfa29ef993264b879" cid="ELEM001" name="/all" creation-date="01/01/0001 00:00:00" type="Dijcsomag" type-id="Dijcsomag" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="4e872b4510ae4ec1a8253d4c34818ff5" cid="C002" type="class" name="FelhasznaloController" style-class="" owner="6dd4e3e069334c73b790cc3e5515248a" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 15:58:54">
+            <style class="default" />
+            <attributes>
+              <attribute id="af1a038f623454db8a22b412f872a439c512" cid="ELEM003" name="passwordEncoder" creation-date="01/01/0001 00:00:00" type="BCryptPasswordEncoder" type-id="BCryptPasswordEncoder" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-2bc83995-2b6c-4660-8653-ffd8efa9089d" />
+                </source-codes>
+              </attribute>
+              <attribute id="abd75ba16f8014ae3a5ef41aa87b4cf60239" cid="ELEM004" name="felhasznaloRepository" creation-date="01/01/0001 00:00:00" type="FelhasznaloRepository" type-id="FelhasznaloRepository" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-5558072f-0189-41b9-99d7-bba98f103c29" />
+                </source-codes>
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="oabf55a86a151436e9143852a1f5f3380418" cid="ELEM005" name="regisztracio" creation-date="01/01/0001 00:00:00" type="ResponseEntity&lt;Felhasznalo&gt;" type-id="ResponseEntity&lt;Felhasznalo&gt;" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="pcfa533a6bdc34ace8af7097409db1411" name=" felhasznalo" type="Felhasznalo" type-id="Felhasznalo" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o2a8d3188c7f24e038f638fb9fe5825b1975" cid="ELEM006" name="belepes" creation-date="01/01/0001 00:00:00" type="ResponseEntity" type-id="ResponseEntity" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="pd9f3ddd7beb047dfad71ddbee3b8a254" name="felhasznalo" type="Felhasznalo" type-id="Felhasznalo" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="b13e1d648a5f4cd5927d769cb343a4a6" cid="C003" type="class" name="PosztController" style-class="" owner="6dd4e3e069334c73b790cc3e5515248a" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 15:59:29">
+            <style class="default" />
+            <attributes>
+              <attribute id="aeac90b2282ce40cf9dc7f4f784ecc87a779" cid="ELEM007" name="posztService" creation-date="01/01/0001 00:00:00" type="PosztService" type-id="PosztService" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-2bb0862b-6818-4cd0-900d-edd025520e99" />
+                </source-codes>
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="oa8fba8a3800540ecafab55352386576c322" cid="ELEM008" name="all" creation-date="01/01/0001 00:00:00" type="Iterable&lt;Poszt&gt;" type-id="Iterable&lt;Poszt&gt;" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="93fa4dfb575b46008d659fe33c84867e" cid="C004" type="class" name="SzerzodesController" style-class="" owner="6dd4e3e069334c73b790cc3e5515248a" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 15:59:38">
+            <style class="default" />
+            <attributes>
+              <attribute id="ad4108d1bcc454d9b889d2a4b87bb4aa0263" cid="ELEM009" name="service" creation-date="01/01/0001 00:00:00" type="SzerzodesService" type-id="SzerzodesService" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-90211598-ac88-4cad-b9f5-e90562d02d9e" />
+                </source-codes>
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o66e1bacd66a04ce197772ae62b50ac79215" cid="ELEM010" name="getAll" creation-date="01/01/0001 00:00:00" type="Iterable&lt;Szerzodes&gt;" type-id="Iterable&lt;Szerzodes&gt;" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="of3603a9b0cb84be5bba7a58827bd97ab670" cid="ELEM011" name="get" creation-date="01/01/0001 00:00:00" type="Optional&lt;Szerzodes&gt;" type-id="Optional&lt;Szerzodes&gt;" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p42ff760c83df46c4b00a75e00f553cb8" name="id" type="Long" type-id="Long" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o6d319a26700c4cd886dd88c147509e78532" cid="ELEM012" name="put" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="pfe5ff621a09d4ecc8d53d50764828dfb" name="szerzodes" type="Szerzodes" type-id="Szerzodes" />
+                  <parameter id="p31496e356eaf40fc832219d72a5da0d8" name="id" type="long" type-id="long" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o90902932dc424b6088e089c6a59fdca6935" cid="ELEM013" name="delete" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p2a1b0c9ca4ad478cad2483b27e1d8c2e" name=" id" type="Long" type-id="Long" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o3ac2560740d847e5b824b2a5e8c6a4c8652" cid="ELEM014" name="post" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p609c9d1e057d44c8bb471b15f085a466" name="szerzodes" type="Szerzodes" type-id="Szerzodes" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="88dfadeb31e041819c123eb58be869af" cid="C005" type="class" name="Dijcsomag" style-class="" owner="ab54e058ca634d278359a39d1047db1a" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 16:00:04">
+            <style class="default" />
+            <attributes>
+              <attribute id="af20f6a7298224b5e8649a1e7d46a282a880" cid="ELEM015" name="id" creation-date="01/01/0001 00:00:00" type="Long" type-id="Long" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-bf97690e-75db-47f7-99d8-048f47610f7f" />
+                </source-codes>
+              </attribute>
+              <attribute id="ab234b59d413c4cf69267f159c1c1588f592" cid="ELEM016" name="nev" creation-date="01/01/0001 00:00:00" type="String" type-id="Uml.String" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-bd2810ea-aa20-472f-ad76-2817f31a2dae" />
+                </source-codes>
+              </attribute>
+              <attribute id="a86b4d9dbc5b34130a8e9a2bcc47cad18967" cid="ELEM017" name="havidij" creation-date="01/01/0001 00:00:00" type="int" type-id="int" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-980dc5ad-c32f-489a-acfb-dd99ed3a3939" />
+                </source-codes>
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="od42138dba70b4b19902375180439ef5c852" cid="ELEM018" name="getId" creation-date="01/01/0001 00:00:00" type="Long" type-id="Long" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o90af7bd3f73e48df8ffce733cf5447fe877" cid="ELEM019" name="setId" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="pc6224e5ee64149b5b27c2205de3ff489" name="id" type="Long" type-id="Long" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o403ade83173a4de6a418294727cd8a02914" cid="ELEM020" name="getNev" creation-date="01/01/0001 00:00:00" type="String" type-id="Uml.String" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="odedc03919c804d35aba339a64d4ea7dc361" cid="ELEM021" name="setNev" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="pcde287fc996042b38830c2512e09eb55" name="nev" type="String" type-id="Uml.String" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="obca573f67bd94ac68b4cf829b40045bb942" cid="ELEM022" name="getHavidij" creation-date="01/01/0001 00:00:00" type="Int" type-id="Int" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o5db8bdf9d22144a19e44c0a4868a67ca534" cid="ELEM023" name="setHavidij" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p92d348c0dc274954ab1f945703bc8a9e" name="havidij" type="Int" type-id="Int" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="oe5227b26744d413eb38180c174255264476" cid="ELEM024" name="toString" creation-date="01/01/0001 00:00:00" type="String" type-id="Uml.String" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="7a15feca773c4dc09d1deffc5a9ac5b6" cid="C006" type="class" name="Felhasznalo" style-class="" owner="ab54e058ca634d278359a39d1047db1a" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 16:00:06">
+            <style class="default" />
+            <attributes>
+              <attribute id="ac7db993ad78d449d973acae7e448db67843" cid="ELEM025" name="id" creation-date="01/01/0001 00:00:00" type="Long" type-id="Long" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-439d5cc3-91a1-4291-81d5-9e1995bf91d1" />
+                </source-codes>
+              </attribute>
+              <attribute id="ad17aad75371d4c6d9d4b0c8070377700874" cid="ELEM026" name="nev" creation-date="01/01/0001 00:00:00" type="String" type-id="Uml.String" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-cc5a76c9-6885-461c-a3e6-71bbf1195334" />
+                </source-codes>
+              </attribute>
+              <attribute id="a961dc9acb0a14bf698ac747ae2846237746" cid="ELEM027" name="jelszo" creation-date="01/01/0001 00:00:00" type="String" type-id="Uml.String" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-f2b7c894-4132-4943-be27-ac8c019d0599" />
+                </source-codes>
+              </attribute>
+              <attribute id="a1f3ad9c4e2c74471bcba33e79de09e4d778" cid="ELEM028" name="aktiv" creation-date="01/01/0001 00:00:00" type="boolean" type-id="boolean" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-7da9ae9f-bbff-4cc5-94f8-c7a88a99d0bb" />
+                </source-codes>
+              </attribute>
+              <attribute id="ae79d2aa367a24148bc40fa52d917207c121" cid="ELEM029" name="role" creation-date="01/01/0001 00:00:00" type="Role" type-id="Role" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-5d4a0c18-4e8a-42fe-8e95-d8ec06819ecd" />
+                </source-codes>
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o74ef8ac3ab024d578648f02aab7886c2640" cid="ELEM030" name="getId" creation-date="01/01/0001 00:00:00" type="int" type-id="int" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o21738ea834c04e8aa659d594c8d8d5d9920" cid="ELEM031" name="setId" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p5b56ba6c90e64bc2afa33ec3fb39c287" name="id" type="int" type-id="int" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o28a90cc98e7149689792594eb482416e183" cid="ELEM032" name="getNev" creation-date="01/01/0001 00:00:00" type="String" type-id="Uml.String" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o5fdfe2710533411fb663d13bacc1fa28686" cid="ELEM033" name="setNev" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="pcc90d36309734bf5a17efa779c124571" name="nev" type="String" type-id="Uml.String" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o59c2dfa32b044156a8f839ec3c98dfb8765" cid="ELEM034" name="getJelszo" creation-date="01/01/0001 00:00:00" type="String" type-id="Uml.String" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="oa99a1b732bfb467d8c10bf7c0d12c261892" cid="ELEM035" name="setJelszo" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p7425cdd9f09f4abda67e3adc6d027c0d" name="jelszo" type="String" type-id="Uml.String" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="of0bcf7ab467e4cafb2b0a6430122a841979" cid="ELEM036" name="isAktiv" creation-date="01/01/0001 00:00:00" type="Boolean" type-id="Uml.Boolean" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o381cb162d1374ff8bc2b625384c200db210" cid="ELEM037" name="setAktiv" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p86c16948930142ba9d0f7b45abc6fbc5" name="aktiv" type="boolean" type-id="boolean" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o43e1aafa00884aa5a02eff1f0515300a769" cid="ELEM038" name="getRole" creation-date="01/01/0001 00:00:00" type="Role" type-id="Role" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="oef618139df7d4b789aedba5a6f51b557848" cid="ELEM039" name="setRole" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="pb19660bba18c47bfb091a2b17590898e" name="role" type="Role" type-id="Role" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="6b419492cc1a431fb8a0d1b171899dd8" cid="C007" type="class" name="Poszt" style-class="" owner="ab54e058ca634d278359a39d1047db1a" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 16:00:08">
+            <style class="default" />
+            <attributes>
+              <attribute id="a3b3d1776dc06470c93714ef9f572a7bf893" cid="ELEM040" name="id" creation-date="01/01/0001 00:00:00" type="int" type-id="int" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-55efbcd1-48a6-49ed-b1e4-23f8fe4afe07" />
+                </source-codes>
+              </attribute>
+              <attribute id="ab2da62f5c26f49dcbea6821f52336d0c636" cid="ELEM041" name="nev" creation-date="01/01/0001 00:00:00" type="String" type-id="Uml.String" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-6e2d4d0f-782c-4706-b84a-6e222ae3724e" />
+                </source-codes>
+              </attribute>
+              <attribute id="a19eb43cffd1242ee9cd13422294ff082828" cid="ELEM042" name="szerzodes" creation-date="01/01/0001 00:00:00" type="List&lt;Szerzodes&gt;" type-id="List&lt;Szerzodes&gt;" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-641ab4e9-68c8-4650-bad1-a2328e7c767b" />
+                </source-codes>
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o12347fcf9d0d4c2c82a8892cad8f0ff2225" cid="ELEM043" name="getId" creation-date="01/01/0001 00:00:00" type="Int" type-id="Int" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o7486e329259846e9b66a213fb8cdd25648" cid="ELEM044" name="setId" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="peeafe62fca9d4659a388c4ef537c48b4" name="id" type="int" type-id="int" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="oefed774db6e7449da6e20b5fb0b5916e336" cid="ELEM045" name="getNev" creation-date="01/01/0001 00:00:00" type="String" type-id="Uml.String" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o6fa1b015d1d64a888e7229b2ca2f404731" cid="ELEM046" name="setNev" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p683c409b323a4abe8c8e43e1839959f6" name="nev" type="String" type-id="Uml.String" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o0cd806bee51a4941a1e54b5b63d0bc7d550" cid="ELEM047" name="getSzerzodes" creation-date="01/01/0001 00:00:00" type="List&lt;Szerzodes&gt;" type-id="List&lt;Szerzodes&gt;" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o1d327bb95aee4f72883b9b7e3941772c269" cid="ELEM048" name="setSzerzodes" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="pc2a367eb18ea4d68a9fa648d0a923580" name="szerzodes" type="List&lt;Szerzodes&gt;" type-id="List&lt;Szerzodes&gt;" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="c4da400e713f497e8c0ff55b55862442" cid="C008" type="class" name="Szerzodes" style-class="" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 16:00:10">
+            <style class="default" />
+            <attributes>
+              <attribute id="a0f26d0abd87543f8bf0704e71b8db0cc882" cid="ELEM049" name="id" creation-date="01/01/0001 00:00:00" type="Long" type-id="Long" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-a9b75fce-0ccf-497f-bac7-87d5d09bcf1d" />
+                </source-codes>
+              </attribute>
+              <attribute id="a5982b871f1664500975d2451bcdb97ae537" cid="ELEM050" name="dijcsomag" creation-date="01/01/0001 00:00:00" type="Dijcsomag" type-id="Dijcsomag" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-de57ca3d-1b02-44fd-8657-f6b637c5405d" />
+                </source-codes>
+              </attribute>
+              <attribute id="a60ab06e1e5484217aa4e4c84baa5d912713" cid="ELEM051" name="dolgozo" creation-date="01/01/0001 00:00:00" type="Felhasznalo" type-id="Felhasznalo" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-13ce526e-a2c6-4a46-b770-139388482085" />
+                </source-codes>
+              </attribute>
+              <attribute id="a9574fdb008c74080b96c9f480de2c5f8848" cid="ELEM052" name="ugyfel" creation-date="01/01/0001 00:00:00" type="Felhasznalo" type-id="Felhasznalo" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-10ac19bf-b588-4596-be2b-579241ee2e62" />
+                </source-codes>
+              </attribute>
+              <attribute id="ade3489389163430eb760986836cd346f256" cid="ELEM053" name="lejarat" creation-date="01/01/0001 00:00:00" type="Date" type-id="Date" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-29f6d366-9b44-4dd8-99bd-88ebfbf2ebb6" />
+                </source-codes>
+              </attribute>
+              <attribute id="adc3c9f2dbd90446db89e36cf26254305863" cid="ELEM054" name="poszt" creation-date="01/01/0001 00:00:00" type="List&lt;Poszt&gt;" type-id="List&lt;Poszt&gt;" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-30ca7637-574b-47b9-afd0-1c26bbc313f6" />
+                </source-codes>
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o93f0f7e57e70462cb696cf31ff5b30bb94" cid="ELEM055" name="getId" creation-date="01/01/0001 00:00:00" type="Long" type-id="Long" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="oa368e3bffc03411c94652f39e6073a68725" cid="ELEM056" name="setId" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="pee58fcfc9022494a9765338dd29eddee" name="id" type="Long" type-id="Long" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o4bf81413e87c4a54a03428165eabe9c329" cid="ELEM057" name="getDijcsomag" creation-date="01/01/0001 00:00:00" type="Dijcsomag" type-id="Dijcsomag" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o9c15e7dd2c49453ba7388f17322ac477484" cid="ELEM058" name="setDijcsomag" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p4714026e1e154339822c6d1810718d4c" name="dijcsomag" type="Dijcsomag" type-id="Dijcsomag" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o94f521505bc44732a99b157e41ab2942355" cid="ELEM059" name="getDolgozo" creation-date="01/01/0001 00:00:00" type="Felhasznalo" type-id="Felhasznalo" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="odaa0ba9ee0144180bde36e5af882a6bc722" cid="ELEM060" name="setDolgozo" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p433b49246a9346acb91475c0d289b253" name="dolgozo" type="Felhasznalo" type-id="Felhasznalo" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o09ae179ab2d949d4a4216d4022ea6a8a208" cid="ELEM061" name="getUgyfel" creation-date="01/01/0001 00:00:00" type="Felhasznalo" type-id="Felhasznalo" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o36fd574c33984e0eaa5b6d16d72d3c9d448" cid="ELEM062" name="setUgyfel" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p8cd7940203ee4565b075136a1cea6d0d" name="ugyfel" type="Felhasznalo" type-id="Felhasznalo" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o034bab8fd5604ac7a0bba7dc80ab67bb311" cid="ELEM063" name="getUgyfel" creation-date="01/01/0001 00:00:00" type="Felhasznalo" type-id="Felhasznalo" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="oaf1856cf09c8409aa7c6a5229f6a2100598" cid="ELEM064" name="getLejarat" creation-date="01/01/0001 00:00:00" type="Date" type-id="Date" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o33a5e3013cf24549ad4a4b7eacf3fd89621" cid="ELEM065" name="setLejarat" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p6534ec9facb44eb4a26ed54d99c9d697" name="lejarat" type="Date" type-id="Date" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o6d8a7eda43a94d0c93d0f932ed370661828" cid="ELEM066" name="getPoszt" creation-date="01/01/0001 00:00:00" type="List&lt;Poszt&gt;" type-id="List&lt;Poszt&gt;" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o67c43b9a9bdc4574861b9a875f403eef820" cid="ELEM067" name="setPoszt" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p7dfe07c7b6914c6494338f3f91797524" name="poszt" type="List&lt;Poszt&gt;" type-id="List&lt;Poszt&gt;" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o7a0953742ab440f8bf7a307d745a17db258" cid="ELEM068" name="toString" creation-date="01/01/0001 00:00:00" type="String" type-id="Uml.String" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="393a5f53468040e7b1d9fa14916b416c" cid="C009" type="class" name="FelhasznaloRepository" style-class="" owner="979b46c3c5014579bed5872c4d2ad00f" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 16:00:18">
+            <style class="default" />
+            <operations>
+              <operation id="o4c78043598d8421bb1a164d402956029374" cid="ELEM095" name="findByNev" creation-date="01/01/0001 00:00:00" type="Optional&lt;Felhasznalo&gt;" type-id="Optional&lt;Felhasznalo&gt;" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p1372284fc8784eab98ab27dfd617e908" name="nev" type="String" type-id="Uml.String" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="6d5152d969874c8aaa55b090fd7980ad" cid="C010" type="class" name="DijcsomagRepository" style-class="" owner="979b46c3c5014579bed5872c4d2ad00f" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 16:00:20">
+            <style class="default" />
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="a8ca767145334379a87f8b23f8565ccc" cid="C011" type="class" name="PosztRepository" style-class="" owner="979b46c3c5014579bed5872c4d2ad00f" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 16:00:23">
+            <style class="default" />
+          </item>
+          <item id="a0187afb4d40479085f7d88e3ff13b22" cid="C012" type="class" name="SzerzodesRepository" style-class="" owner="979b46c3c5014579bed5872c4d2ad00f" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 16:00:25">
+            <style class="default" />
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="57fd72e4c4174bc7ac44542f1bbd90bc" cid="C013" type="class" name="AuthenticatedFelhasznalo" style-class="" owner="b35e566b6aca436fb0566b2fb7032ca5" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 16:00:33">
+            <style class="default" />
+            <attributes>
+              <attribute id="afecc5e9e8e444f06ac2a93aa864521a5590" cid="ELEM085" name="felhasznalo" creation-date="01/01/0001 00:00:00" type="Felhasznalo" type-id="Felhasznalo" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-c07baec2-8894-4df4-8457-9ed2f4dea5f1" />
+                </source-codes>
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="oa294f7129e77428f917e683de3143491654" cid="ELEM086" name="getFelhasznalo" creation-date="01/01/0001 00:00:00" type="Felhasznalo" type-id="Felhasznalo" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o80c2916188504acdaec1fafe4054789f478" cid="ELEM087" name="setFelhasznalo" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p6f1ce362ce7e43ccbc3141f83d7af5ba" name="felhasznalo" type="Felhasznalo" type-id="Felhasznalo" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="7605f4c0a5f2497e8a5430db85f27863" cid="C014" type="class" name="MyUserDetailsService" style-class="" owner="b35e566b6aca436fb0566b2fb7032ca5" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 16:00:35">
+            <style class="default" />
+            <attributes>
+              <attribute id="af2ee4ded8bd24f6d9e1729905ca2c8ce284" cid="ELEM088" name="repository" creation-date="01/01/0001 00:00:00" type="FelhasznaloRepository" type-id="FelhasznaloRepository" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-77f61ed1-7f88-42a6-9340-caaf449ed317" />
+                </source-codes>
+              </attribute>
+              <attribute id="a687b02491fb847189365cb7a44fab6b1180" cid="ELEM089" name="authenticated" creation-date="01/01/0001 00:00:00" type="AutenticatedFelhasznalo" type-id="AutenticatedFelhasznalo" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-bb8a0a9d-32b2-4800-b26f-973b2ac2734a" />
+                </source-codes>
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="oa6635e0f12dc45ec821141f2ca962963955" cid="ELEM090" name="loadUserByUsername" creation-date="01/01/0001 00:00:00" type="UserDetails" type-id="UserDetails" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p8743b2b02c384dbc8df6796dbba3a815" name="nev" type="String" type-id="Uml.String" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="f4f9c0f7a4914f08be97bf822dc89c70" cid="C015" type="class" name="WebSecurityConfig" style-class="" owner="b35e566b6aca436fb0566b2fb7032ca5" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 16:00:38">
+            <style class="default" />
+            <attributes>
+              <attribute id="a5d4f677638c4457ba74acb03a003e2e7185" cid="ELEM091" name="userDetailsService" creation-date="01/01/0001 00:00:00" type="UserDetailsService" type-id="UserDetailsService" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-cf0aa88c-5795-4b37-9f20-ca4fffc09999" />
+                </source-codes>
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="od911ce63d7374b90bcb78891c03f841a489" cid="ELEM092" name="configure" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="pe654ebcb2a074299828871ecf6c7ec8a" name="http" type="HttpSecurity" type-id="HttpSecurity" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o789d1d86b08e4ed08327fad3eb724b0c280" cid="ELEM093" name="configureAuthentication" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p7d2c192f21fd4e35892ecb45f733c32e" name="auth" type="AuthenticationManagerBuilder" type-id="AuthenticationManagerBuilder" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="oa3e310ec0e274e99b95cb64db08888d7479" cid="ELEM094" name="passwordEncoder" creation-date="01/01/0001 00:00:00" type="BCryptPasswordEncoder" type-id="BCryptPasswordEncoder" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="6ad0e29427094d09aab548a45a07d090" cid="C016" type="class" name="DijcsomagService" style-class="" owner="24c2d493bbe54e548fa26475da1ea9d6" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 16:04:59">
+            <style class="default" />
+            <attributes>
+              <attribute id="a60dac18fc227447cabf2edf8ab4e0d75330" cid="ELEM069" name="repository" creation-date="01/01/0001 00:00:00" type="DijcsomagRepository" type-id="DijcsomagRepository" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-c0a16cd5-2f9f-46e6-9e59-7fed255453d5" />
+                </source-codes>
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="odda521ef010f4729a3ef1ed341beeb2b985" cid="ELEM070" name="getAllDijcsomag" creation-date="01/01/0001 00:00:00" type="Iterable&lt;Dijcsomag&gt;" type-id="Iterable&lt;Dijcsomag&gt;" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o0c72cb3b69a0462790e7f04dd36a040c609" cid="ELEM071" name="getDijcsomagById" creation-date="01/01/0001 00:00:00" type="Optional&lt;Dijcsomag&gt;" type-id="Optional&lt;Dijcsomag&gt;" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p7539531e53b6420a9703e75914f0676f" name="id" type="Long" type-id="Long" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o96e1bbd0dbf5452e9ae1a2fc76d879c1814" cid="ELEM072" name="updateDijcsomag" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p93d4ffc73b804eaa8a3ee39dcae49e33" name="dijcsomag" type="Dijcsomag" type-id="Dijcsomag" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o07e7bb1aa0d3442ab3da72798df391d0333" cid="ELEM073" name="addDijcsoamg" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p9f96d9d9713b49faa7922137ce8e7d41" name="dijcsomag" type="Dijcsomag" type-id="Dijcsomag" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="b13d130b60d54ca691248f7b8d6fc1fa" cid="C017" type="class" name="PosztService" style-class="" owner="24c2d493bbe54e548fa26475da1ea9d6" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 16:05:01">
+            <style class="default" />
+            <attributes>
+              <attribute id="ab5e8020f14b6440888f23e509c1695c9834" cid="ELEM074" name="repository" creation-date="01/01/0001 00:00:00" type="PosztRepository" type-id="PosztRepository" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-f7e90ff1-4820-47cd-8ab2-99c00cde791c" />
+                </source-codes>
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o330209aaf0754a45a1efe4ad0b21caf9401" cid="ELEM075" name="getAllPoszt" creation-date="01/01/0001 00:00:00" type="Iterable&lt;Poszt&gt;" type-id="Iterable&lt;Poszt&gt;" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o4631ad3273ed40ef9e52c8d95a954a95866" cid="ELEM076" name="getPosztById" creation-date="01/01/0001 00:00:00" type="Optional&lt;Poszt&gt;" type-id="Optional&lt;Poszt&gt;" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p3c93b4675649477abfb9124db5a23b76" name="id" type="Long" type-id="Long" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o5ad02fe3cfe5491ea44317a4bf6e656c568" cid="ELEM077" name="updatePoszt" creation-date="01/01/0001 00:00:00" type="" type-id="" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="pa255f544d7914256be96393140a30d81" name="poszt" type="Poszt" type-id="Class:6b419492cc1a431fb8a0d1b171899dd8" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o860defa89e3c442aa3395f76bba5e4a5648" cid="ELEM078" name="addPoszt" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p30e3d47dcb044613b1fb81c732eabb12" name="poszt" type="Poszt" type-id="Class:6b419492cc1a431fb8a0d1b171899dd8" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="b79bf33620b3404a844ec165d8b6d8d4" cid="C018" type="class" name="SzerzodesService" style-class="" owner="24c2d493bbe54e548fa26475da1ea9d6" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 16:05:03">
+            <style class="default" />
+            <attributes>
+              <attribute id="ae8a49231c4dd42bf88fda4e24c9dd1e7502" cid="ELEM079" name="repository" creation-date="01/01/0001 00:00:00" type="SzerzodesRepository" type-id="SzerzodesRepository" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-b2e761a5-0a9a-43b8-8d2d-96a99a47fca5" />
+                </source-codes>
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="oc053831510f843adbd04d6afd5face97661" cid="ELEM080" name="getAllSzerzodes" creation-date="01/01/0001 00:00:00" type="Iterable&lt;Szerzodes&gt;" type-id="Iterable&lt;Szerzodes&gt;" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o4964a2598af841d6b07a8d23f5a39b58117" cid="ELEM081" name="getSzerzodesById" creation-date="01/01/0001 00:00:00" type="Optional&lt;Szerzodes&gt;" type-id="Optional&lt;Szerzodes&gt;" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="pba46df2ed9f2404dbe06313488b0aca1" name="id" type="Long" type-id="Long" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o8e34b779fa2a41ca8a9ee55659a3337c444" cid="ELEM082" name="update" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="pafcb21b2af4942ff88197c3a9e26c95b" name="szerzodes" type="Szerzodes" type-id="Szerzodes" />
+                  <parameter id="pd754bdc7c9f143ed84414ad7235b69e1" name="id" type="Long" type-id="Long" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="oeece8730f6ec4dc19ad00dca1e7ddb20834" cid="ELEM083" name="create" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p8ace538b768b4c07914d87c42d0931fc" name="szerzodes" type="Szerzodes" type-id="Szerzodes" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="oae0b63a98ff4477ab89b7689d56a85be697" cid="ELEM084" name="delete" creation-date="01/01/0001 00:00:00" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p8bb04a7e9a9f491ebcdefcea0c944980" name="id" type="Long" type-id="Long" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+        </abstract-items>
+        <layer id="65a4b8b2410241a0b335cf82e296475c" name="Default" visible="true" enabled="true" locked="false">
+          <item id="b65cac26f2da466a8b486fae996919ff" iid="7e10ff0147504375bdf511984294bdef" anchor="None" creation-date="11/12/2018 14:23:05" order-index="0" type="entity">
+            <layout ax="-15" ay="-17" awidth="2076" aheight="2287" x="-15" y="-17" width="2076" height="2287" container-layout="simple" />
+          </item>
+          <item id="6dd4e3e069334c73b790cc3e5515248a" iid="fafda8fdbe71441498250cff205202bf" container="b65cac26f2da466a8b486fae996919ff" container-iid="7e10ff0147504375bdf511984294bdef" anchor="None" creation-date="11/12/2018 15:53:29" order-index="1" type="entity">
+            <layout ax="135" ay="116" awidth="449" aheight="649" x="135" y="116" width="449" height="649" container-layout="simple" />
+          </item>
+          <item id="ab54e058ca634d278359a39d1047db1a" iid="103697428fb14f329d72b58f85130660" container="b65cac26f2da466a8b486fae996919ff" container-iid="7e10ff0147504375bdf511984294bdef" anchor="None" creation-date="11/12/2018 15:53:34" order-index="2" type="entity">
+            <layout ax="727" ay="116" awidth="511" aheight="649" x="727" y="116" width="511" height="649" container-layout="simple" />
+          </item>
+          <item id="979b46c3c5014579bed5872c4d2ad00f" iid="bfd9d7cc355f4b388e81be6e1c4fd638" container="b65cac26f2da466a8b486fae996919ff" container-iid="7e10ff0147504375bdf511984294bdef" anchor="None" creation-date="11/12/2018 15:53:41" order-index="3" type="entity">
+            <layout ax="1319" ay="103" awidth="617" aheight="662" x="1319" y="103" width="617" height="662" container-layout="simple" />
+          </item>
+          <item id="b35e566b6aca436fb0566b2fb7032ca5" iid="31aaef16725c4b3bab482334b59e2e7e" container="b65cac26f2da466a8b486fae996919ff" container-iid="7e10ff0147504375bdf511984294bdef" anchor="None" creation-date="11/12/2018 15:54:15" order-index="4" type="entity">
+            <layout ax="186" ay="1009" awidth="729" aheight="887" x="186" y="1009" width="729" height="887" container-layout="simple" />
+          </item>
+          <item id="24c2d493bbe54e548fa26475da1ea9d6" iid="0c6ea702c95846668764c33e0f7ee3a6" container="b65cac26f2da466a8b486fae996919ff" container-iid="7e10ff0147504375bdf511984294bdef" anchor="None" creation-date="11/12/2018 15:54:21" order-index="5" type="entity">
+            <layout ax="1195" ay="918" awidth="670" aheight="992" x="1195" y="918" width="670" height="992" container-layout="simple" />
+          </item>
+          <item id="5939ba79f23b4532921d74e33280f5f1" iid="074c4a0ffa8a4ff38eb66a66d4291562" container="6dd4e3e069334c73b790cc3e5515248a" container-iid="fafda8fdbe71441498250cff205202bf" anchor="None" creation-date="11/12/2018 15:58:19" order-index="6" type="entity">
+            <layout ax="167" ay="168" awidth="170" aheight="160" x="167" y="168" width="170" height="160" />
+            <class />
+          </item>
+          <item id="4e872b4510ae4ec1a8253d4c34818ff5" iid="5610d534c2974e119ec5f37e5879d9cc" container="6dd4e3e069334c73b790cc3e5515248a" container-iid="fafda8fdbe71441498250cff205202bf" anchor="None" creation-date="11/12/2018 15:58:54" order-index="7" type="entity">
+            <layout ax="187" ay="375" awidth="345" aheight="160" x="187" y="375" width="345" height="160" />
+            <class />
+          </item>
+          <item id="b13e1d648a5f4cd5927d769cb343a4a6" iid="0efeb6f12faf4f5690d854e36c43efcd" container="6dd4e3e069334c73b790cc3e5515248a" container-iid="fafda8fdbe71441498250cff205202bf" anchor="None" creation-date="11/12/2018 15:59:29" order-index="8" type="entity">
+            <layout ax="381" ay="168" awidth="170" aheight="160" x="381" y="168" width="170" height="160" />
+            <class />
+          </item>
+          <item id="93fa4dfb575b46008d659fe33c84867e" iid="18ed4bc759e84156a7d23836041081de" container="6dd4e3e069334c73b790cc3e5515248a" container-iid="fafda8fdbe71441498250cff205202bf" anchor="None" creation-date="11/12/2018 15:59:38" order-index="9" type="entity">
+            <layout ax="213.5" ay="585" awidth="292" aheight="160" x="213.5" y="585" width="292" height="160" />
+            <class />
+          </item>
+          <item id="88dfadeb31e041819c123eb58be869af" iid="16df8da97ead463d9382603e4652ad3a" container="ab54e058ca634d278359a39d1047db1a" container-iid="103697428fb14f329d72b58f85130660" anchor="None" creation-date="11/12/2018 16:00:04" order-index="10" type="entity">
+            <layout ax="775" ay="194" awidth="207" aheight="219" x="775" y="194" width="207" height="219" />
+            <class />
+          </item>
+          <item id="7a15feca773c4dc09d1deffc5a9ac5b6" iid="b8c9c0eb5def4bcbb3c8132b9ffd228c" container="ab54e058ca634d278359a39d1047db1a" container-iid="103697428fb14f329d72b58f85130660" anchor="None" creation-date="11/12/2018 16:00:06" order-index="11" type="entity">
+            <layout ax="1003" ay="168" awidth="216" aheight="304" x="1003" y="168" width="216" height="304" />
+            <class />
+          </item>
+          <item id="6b419492cc1a431fb8a0d1b171899dd8" iid="71479ae2007b421cbc0dffd2907523e1" container="ab54e058ca634d278359a39d1047db1a" container-iid="103697428fb14f329d72b58f85130660" anchor="None" creation-date="11/12/2018 16:00:08" order-index="12" type="entity">
+            <layout ax="727" ay="514" awidth="334" aheight="202" x="727" y="514" width="334" height="202" />
+            <class />
+          </item>
+          <item id="c4da400e713f497e8c0ff55b55862442" iid="cf75bbe5701e4277b0203da408922fc9" anchor="None" creation-date="11/12/2018 16:00:10" order-index="13" type="entity">
+            <layout ax="1079" ay="535" awidth="298" aheight="389" x="1079" y="535" width="298" height="389" />
+            <class />
+          </item>
+          <item id="393a5f53468040e7b1d9fa14916b416c" iid="773ac3406788498ea37881b4a001f73c" container="979b46c3c5014579bed5872c4d2ad00f" container-iid="bfd9d7cc355f4b388e81be6e1c4fd638" anchor="None" creation-date="11/12/2018 16:00:18" order-index="14" type="entity">
+            <layout ax="1354" ay="194" awidth="140" aheight="160" x="1354" y="194" width="140" height="160" />
+            <class />
+          </item>
+          <item id="6d5152d969874c8aaa55b090fd7980ad" iid="c9c285d24b32402ea81b786fbe259d93" container="979b46c3c5014579bed5872c4d2ad00f" container-iid="bfd9d7cc355f4b388e81be6e1c4fd638" anchor="None" creation-date="11/12/2018 16:00:20" order-index="15" type="entity">
+            <layout ax="1708" ay="194" awidth="140" aheight="160" x="1708" y="194" width="140" height="160" />
+            <class />
+          </item>
+          <item id="a8ca767145334379a87f8b23f8565ccc" iid="5ff03f81958449abb287e568af5fe2a9" container="979b46c3c5014579bed5872c4d2ad00f" container-iid="bfd9d7cc355f4b388e81be6e1c4fd638" anchor="None" creation-date="11/12/2018 16:00:23" order-index="16" type="entity">
+            <layout ax="1354" ay="448" awidth="140" aheight="160" x="1354" y="448" width="140" height="160" />
+            <class />
+          </item>
+          <item id="a0187afb4d40479085f7d88e3ff13b22" iid="942952a55ca5423aba21becb54be3a17" container="979b46c3c5014579bed5872c4d2ad00f" container-iid="bfd9d7cc355f4b388e81be6e1c4fd638" anchor="None" creation-date="11/12/2018 16:00:25" order-index="17" type="entity">
+            <layout ax="1708" ay="448" awidth="140" aheight="160" x="1708" y="448" width="140" height="160" />
+            <class />
+          </item>
+          <item id="57fd72e4c4174bc7ac44542f1bbd90bc" iid="0c2ab5dbfc8b46968362250d0d0c67d2" container="b35e566b6aca436fb0566b2fb7032ca5" container-iid="31aaef16725c4b3bab482334b59e2e7e" anchor="None" creation-date="11/12/2018 16:00:33" order-index="18" type="entity">
+            <layout ax="267" ay="1133" awidth="319" aheight="160" x="267" y="1133" width="319" height="160" />
+            <class />
+          </item>
+          <item id="7605f4c0a5f2497e8a5430db85f27863" iid="7809d77ff96244cdb77916399b562466" container="b35e566b6aca436fb0566b2fb7032ca5" container-iid="31aaef16725c4b3bab482334b59e2e7e" anchor="None" creation-date="11/12/2018 16:00:35" order-index="19" type="entity">
+            <layout ax="654" ay="1133" awidth="324" aheight="160" x="654" y="1133" width="324" height="160" />
+            <class />
+          </item>
+          <item id="f4f9c0f7a4914f08be97bf822dc89c70" iid="24a983838d904600bd90c79b828a00de" container="b35e566b6aca436fb0566b2fb7032ca5" container-iid="31aaef16725c4b3bab482334b59e2e7e" anchor="None" creation-date="11/12/2018 16:00:38" order-index="20" type="entity">
+            <layout ax="467" ay="1492" awidth="306" aheight="160" x="467" y="1492" width="306" height="160" />
+            <class />
+          </item>
+          <item id="6ad0e29427094d09aab548a45a07d090" iid="29e23d84d08f4b47bde2ef2d0a9b9955" container="24c2d493bbe54e548fa26475da1ea9d6" container-iid="0c6ea702c95846668764c33e0f7ee3a6" anchor="None" creation-date="11/12/2018 16:04:59" order-index="21" type="entity">
+            <layout ax="1265" ay="1009" awidth="352" aheight="160" x="1265" y="1009" width="352" height="160" />
+            <class />
+          </item>
+          <item id="b13d130b60d54ca691248f7b8d6fc1fa" iid="7ef792514cc845b7a46c34f5f6a60488" container="24c2d493bbe54e548fa26475da1ea9d6" container-iid="0c6ea702c95846668764c33e0f7ee3a6" anchor="None" creation-date="11/12/2018 16:05:01" order-index="22" type="entity">
+            <layout ax="1604" ay="991" awidth="288" aheight="160" x="1604" y="991" width="288" height="160" />
+            <class />
+          </item>
+          <item id="b79bf33620b3404a844ec165d8b6d8d4" iid="1ada74496d6447e8adab85e0dfd9da23" container="24c2d493bbe54e548fa26475da1ea9d6" container-iid="0c6ea702c95846668764c33e0f7ee3a6" anchor="None" creation-date="11/12/2018 16:05:03" order-index="23" type="entity">
+            <layout ax="1443" ay="1360" awidth="349" aheight="160" x="1443" y="1360" width="349" height="160" />
+            <class />
+          </item>
+        </layer>
+      </diagram>
+      <diagram type="entity-relationship" id="p2b3b0a13fdaf411aaf20ba96eef7eac6_338099879" name="EntityRelationshipDiagram1" order-index="3" overview-order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="0,-100">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author>Szabolcs Szerencsi</author>
+          </authors>
+          <description />
+          <creation-date>11/12/2018 13:20:42</creation-date>
+          <change-date>11/12/2018 16:56:05</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="f97e1857787542a6a95b948e1ac33b58" cid="ENT001" type="erd-entity" name="Dijcsomag" style-class="" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 16:48:51">
+            <style class="default" />
+            <entity description="" />
+            <attributes>
+              <attribute uid="a0548265692f54760b279c956d1eaab2e752" cid="ELEM096" name="id" type="Long" type-id="Long" type-size="" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" auto-increment="false">
+                <style class="default" />
+              </attribute>
+              <attribute uid="ada7bc31058d143e18946b70cb529fa2f167" cid="ELEM097" name="havidij" type="Int" type-id="Int" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" auto-increment="false">
+                <style class="default" />
+              </attribute>
+              <attribute uid="a82dbae324d7e4f439c642ed3b67ff413543" cid="ELEM098" name="nev" type="String" type-id="Uml.String" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" auto-increment="false">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <indexes />
+          </item>
+          <item id="2a15d703bb384d36893ffdc64a85f63e" cid="ENT002" type="erd-entity" name="Felhasznalo" style-class="" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 16:48:53">
+            <style class="default" />
+            <entity description="" />
+            <attributes>
+              <attribute uid="ac1b196b4280443768d35d927b4b4cc37550" cid="ELEM099" name="id" type="Long" type-id="Long" type-size="" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" auto-increment="false">
+                <style class="default" />
+              </attribute>
+              <attribute uid="a234040257b454f4c87020a10af774ab694" cid="ELEM100" name="aktiv" type="Boolean" type-id="Uml.Boolean" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" auto-increment="false">
+                <style class="default" />
+              </attribute>
+              <attribute uid="a9fcf25c7d8154d11a0bd68b1b96cc60f781" cid="ELEM101" name="jelszo" type="String" type-id="Uml.String" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" auto-increment="false">
+                <style class="default" />
+              </attribute>
+              <attribute uid="ae59db4aac92a4253a7c5cec2aa01d041549" cid="ELEM102" name="nev" type="String" type-id="Uml.String" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" auto-increment="false">
+                <style class="default" />
+              </attribute>
+              <attribute uid="a32cecb42469048ee9a09526a855bec95428" cid="ELEM103" name="role" type="Role" type-id="Role" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" auto-increment="false">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <indexes />
+          </item>
+          <item id="f4561d82003e4cd0a42651a8c3240b75" cid="ENT003" type="erd-entity" name="Poszt" style-class="" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 16:48:55">
+            <style class="default" />
+            <entity description="" />
+            <attributes>
+              <attribute uid="a376833e899a14715a82d1fe88fb54796276" cid="ELEM104" name="id" type="Long" type-id="Long" type-size="" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" auto-increment="false">
+                <style class="default" />
+              </attribute>
+              <attribute uid="af212c0311e254e90af7e30f3e78c82ae331" cid="ELEM105" name="nev" type="String" type-id="Uml.String" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" auto-increment="false">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <indexes />
+          </item>
+          <item id="b6dcfbfb31d44a5b9580418cc05a8c4f" cid="ENT004" type="erd-entity" name="Szerzodes" style-class="" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 16:48:57">
+            <style class="default" />
+            <entity description="" />
+            <attributes>
+              <attribute uid="aafa46ee1c6294b2c8ec42e534fc90f57563" cid="ELEM106" name="id" type="Long" type-id="Long" type-size="" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" auto-increment="false">
+                <style class="default" />
+              </attribute>
+              <attribute uid="ad9cac352cdf34d138faf56b452b64bb1689" cid="ELEM107" name="lejarat" type="Date" type-id="Date" type-size="" foreign-key="false" primary-key="false" nullable="false" description="" default-value="" auto-increment="false">
+                <style class="default" />
+              </attribute>
+              <attribute uid="ad7467e3a07dc49fb8260dd780e62bac2305" cid="ELEM108" name="dijcsomag_id" type="Long" type-id="Long" type-size="" foreign-key="true" primary-key="false" nullable="false" description="" default-value="" auto-increment="false">
+                <style class="default" />
+              </attribute>
+              <attribute uid="ab67d9f2bd9c84dc984252022dd46016e177" cid="ELEM109" name="dolgozo_id" type="Long" type-id="Long" type-size="" foreign-key="true" primary-key="false" nullable="false" description="" default-value="" auto-increment="false">
+                <style class="default" />
+              </attribute>
+              <attribute uid="aa814833104084a2e80ad778cb31595cd457" cid="ELEM110" name="ugyfel_id" type="Long" type-id="Long" type-size="" foreign-key="true" primary-key="false" nullable="false" description="" default-value="" auto-increment="false">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <indexes />
+          </item>
+          <item id="cf3319a720ed4405935688908efd3e9c" cid="REL001" type="erd-relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 16:54:29" from="f97e1857787542a6a95b948e1ac33b58" to="b6dcfbfb31d44a5b9580418cc05a8c4f">
+            <style class="default" />
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="1">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="dc984ebd3b3e49a89cf00ffc3dcb92bb" cid="REL004" type="erd-relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 16:55:04" from="f4561d82003e4cd0a42651a8c3240b75" to="f97e1857787542a6a95b948e1ac33b58">
+            <style class="default" />
+            <erd-relation type="Identifying" multiplicity-from="*" multiplicity-to="*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+          <item id="64f572c6fa90427a9c7e0ff2cdefe648" cid="REL005" type="erd-relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="P765aec9f64bb4547acd599950a78d7bb" creation-date="11/12/2018 16:56:05" from="b6dcfbfb31d44a5b9580418cc05a8c4f" to="2a15d703bb384d36893ffdc64a85f63e">
+            <style class="default" />
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="*">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
+          </item>
+        </abstract-items>
+        <layer id="52b4708bf0c345b4b305591ed66af467" name="Default" visible="true" enabled="true" locked="false">
+          <item id="f97e1857787542a6a95b948e1ac33b58" iid="b8493b203aeb4be18fcae9195b2eee76" anchor="None" creation-date="11/12/2018 16:48:51" order-index="0" type="entity">
+            <layout ax="66" ay="-44" awidth="140" aheight="160" x="66" y="-44" width="140" height="160" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="2a15d703bb384d36893ffdc64a85f63e" iid="2c3ded46b31141b483ff91c700ea07b7" anchor="None" creation-date="11/12/2018 16:48:53" order-index="1" type="entity">
+            <layout ax="646" ay="-44" awidth="181" aheight="160" x="646" y="-44" width="181" height="160" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="f4561d82003e4cd0a42651a8c3240b75" iid="65b6469191b64e7cbd5c96fdcd431dd6" anchor="None" creation-date="11/12/2018 16:48:55" order-index="2" type="entity">
+            <layout ax="66" ay="251" awidth="140" aheight="160" x="66" y="251" width="140" height="160" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="b6dcfbfb31d44a5b9580418cc05a8c4f" iid="be117d8b3aab40c69aa9abb9992d7e62" anchor="None" creation-date="11/12/2018 16:48:57" order-index="3" type="entity">
+            <layout ax="646" ay="251" awidth="223" aheight="160" x="646" y="251" width="223" height="160" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="cf3319a720ed4405935688908efd3e9c" iid="464cd1d3c35645c480f01a7abd4cf29c" creation-date="11/12/2018 16:54:29" order-index="4" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="206" y1="-1" x2="646" y2="289" start-border-pos="0.3171875" end-border-pos="0.940625" name-position="0,0">
+              <points>
+                <point x="206" y="-1" />
+                <point x="646" y="289" />
+              </points>
+            </layout>
+            <relation from="f97e1857787542a6a95b948e1ac33b58" from-iid="b8493b203aeb4be18fcae9195b2eee76" to="b6dcfbfb31d44a5b9580418cc05a8c4f" to-iid="be117d8b3aab40c69aa9abb9992d7e62" />
+          </item>
+          <item id="dc984ebd3b3e49a89cf00ffc3dcb92bb" iid="21be9af96fff460ea9001cfe616aa006" creation-date="11/12/2018 16:55:04" order-index="5" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="206" y1="356" x2="194" y2="116" start-border-pos="0.4140625" end-border-pos="0.521428571428571" name-position="0,0">
+              <points>
+                <point x="206" y="356" />
+                <point x="298" y="201" />
+                <point x="194" y="116" />
+              </points>
+            </layout>
+            <relation from="f4561d82003e4cd0a42651a8c3240b75" from-iid="65b6469191b64e7cbd5c96fdcd431dd6" to="f97e1857787542a6a95b948e1ac33b58" to-iid="b8493b203aeb4be18fcae9195b2eee76" />
+          </item>
+          <item id="64f572c6fa90427a9c7e0ff2cdefe648" iid="e634c7816b15460d96796a1b701bf6c5" creation-date="11/12/2018 16:56:05" order-index="6" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="677" y1="251" x2="684" y2="116" start-border-pos="0.0347533632286996" end-border-pos="0.697513812154696" name-position="0,0">
+              <points>
+                <point x="677" y="251" />
+                <point x="684" y="116" />
+              </points>
+            </layout>
+            <relation from="b6dcfbfb31d44a5b9580418cc05a8c4f" from-iid="be117d8b3aab40c69aa9abb9992d7e62" to="2a15d703bb384d36893ffdc64a85f63e" to-iid="2c3ded46b31141b483ff91c700ea07b7" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>
