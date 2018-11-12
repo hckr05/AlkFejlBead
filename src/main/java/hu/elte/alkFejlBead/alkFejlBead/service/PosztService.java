@@ -11,7 +11,7 @@ import java.util.Optional;
 public class PosztService {
 
     @Autowired
-    PosztRepository repository;
+    private PosztRepository repository;
 
     public Iterable<Poszt> getAllPoszt()  { return repository.findAll(); }
 

@@ -12,7 +12,7 @@ import java.util.Optional;
 public class DijcsomagService implements Serializable {
 
     @Autowired
-    DijcsomagRepository repository;
+    private DijcsomagRepository repository;
 
     public Iterable<Dijcsomag> getAllDijcsomag()  { return repository.findAll(); }
 

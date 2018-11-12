@@ -12,7 +12,7 @@ import java.util.Optional;
 public class SzerzodesService implements Serializable {
 
     @Autowired
-    SzerzodesRepository repository;
+    private SzerzodesRepository repository;
 
     public Iterable<Szerzodes> getAllSzerzodes()  { return repository.findAll(); }
 
